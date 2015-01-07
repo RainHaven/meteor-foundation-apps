@@ -1,15 +1,15 @@
 Package.describe({
   name: 'rainhaven:foundation-apps',
   summary: 'Foundation for Apps for Meteor',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/RainHaven/meteor-foundation-apps.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
 
-  api.use('rainhaven:sass@1.0.0', ['client', 'server']);
-  api.imply('rainhaven:sass@1.0.0', ['client', 'server']);
+  api.use('rainhaven:sass@1.0.1', ['client', 'server']);
+  api.imply('rainhaven:sass@1.0.1', ['client', 'server']);
 
   // SCSS
   api.addFiles([
@@ -55,6 +55,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('foundation-apps');
+  // api.use('foundation-apps');
   api.addFiles('foundation-apps-tests.js');
 });
