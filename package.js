@@ -1,7 +1,7 @@
 Package.describe({
   name: 'rainhaven:foundation-apps',
   summary: 'Foundation for Apps. Packaged for Meteor',
-  version: '1.0.2',
+  version: '1.0.3',
   git: 'https://github.com/RainHaven/meteor-foundation-apps.git'
 });
 
